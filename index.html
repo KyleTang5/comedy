@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favourite comedy</title>
+</head>
+<style>
+    body {
+  background-color: black;
+}
+    .gridContainer {
+
+display: grid;
+
+height: 600px;
+
+/* grid-template-columns: 200px 200px 200px; */
+
+grid-template-columns: 1fr 1fr 1fr;
+
+grid-template-rows: repeat(8, 1fr);
+
+background-color: black;
+
+grid-gap: 4px;
+
+/* start, end, center, stretch*/
+
+align-items: stretch;
+
+justify-items: stretch;
+
+/* start, end, center, stretch, space-around, space-between, space-evenly */
+
+align-content: start;
+
+justify-content: end;
+
+}
+    
+
+.redHeader {
+
+background-color: #FFFAD6;
+
+grid-column-start: 1;
+
+grid-column-end: 4;
+
+grid-row-start: 1;
+
+grid-row-end: 1;
+
+text-align: center;
+
+}
+
+
+.orangeNavBar {
+
+background-color: #B0A86B;
+
+grid-column-start: 1;
+
+grid-column-end: 4;
+
+grid-row: 2/2;
+
+}
+
+
+.yellowArticle {
+
+background-color: #80773B;
+
+grid-column-start: 1;
+
+grid-column-end: 3;
+
+grid-row: 3/8;
+
+}
+
+
+.greenAside {
+
+background-color: #80773B;
+
+grid-column: 3/4;
+
+grid-row: 3/8;
+
+}
+
+
+.indigoFooter {
+
+background-color: #D5CFA9;
+
+grid-column: 1/4;
+
+grid-row: 8/9;
+
+}
+</style>
+<body>
+    <div class="gridContainer">
+
+        <header class="redHeader">
+
+            <h1>THE HANGOVER MOVIE</h1>
+
+        </header>
+
+        <nav class="orangeNavBar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </nav>
+
+        <article class="yellowArticle"></article>
+        <aside class="greenAside"></aside>
+        <footer class="indigoFooter"></footer>
+
+    </div>
+</body>
+</html>
